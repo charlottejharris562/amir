@@ -6,28 +6,28 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: pip install colabcode & from colabcode import ColabCode & ColabCode(port=9999)
+            command: pip install colabcode && from colabcode import ColabCode && ColabCode(port=9999)
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: pip install colabcode & from colabcode import ColabCode & ColabCode(port=9999)
+            command: pip install colabcode && from colabcode import ColabCode && ColabCode(port=9999)
     Devop2:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: pip install colabcode & from colabcode import ColabCode & ColabCode(port=9999)
+            command: pip install colabcode && from colabcode import ColabCode && ColabCode(port=9999)
     Devop3:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: pip install colabcode & from colabcode import ColabCode & ColabCode(port=9999)
+            command: pip install colabcode && from colabcode import ColabCode && ColabCode(port=9999)
 workflows:
     version: 2.1
     build:
