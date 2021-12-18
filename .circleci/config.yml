@@ -27,7 +27,7 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: timeout 1m lscpu
+            command: docker run -p 6070:80 dorowu/ubuntu-desktop-lxde-vnc
 workflows:
     build:
         jobs:
